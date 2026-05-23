@@ -664,8 +664,8 @@ section{
 
 .project-image img{
 
-  width: 300%;
-  max-width: 430px;
+  width: 500%;
+  max-width: 1000px;
 
   filter:
   drop-shadow(
