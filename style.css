@@ -893,3 +893,158 @@ textarea{
   }
 
 }
+
+/* =========================
+   PROJETO PRINCIPAL
+========================= */
+
+.project{
+  padding: 120px 8%;
+  background: linear-gradient(
+    135deg,
+    #060816,
+    #0b1023,
+    #14092b
+  );
+  position: relative;
+  overflow: hidden;
+}
+
+.project-container{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 80px;
+  flex-wrap: wrap;
+}
+
+.project-text{
+  flex: 1;
+  min-width: 320px;
+}
+
+.project-tag{
+  display: inline-block;
+  margin-bottom: 20px;
+  padding: 8px 18px;
+  border-radius: 30px;
+  background: rgba(130, 93, 198, 0.15);
+  border: 1px solid rgba(130, 93, 198, 0.4);
+  color: #caa8ff;
+  font-size: 14px;
+  letter-spacing: 1px;
+}
+
+.project-text h2{
+  font-size: 52px;
+  margin-bottom: 25px;
+  color: #fff;
+}
+
+.project-text p{
+  color: #cfd3e2;
+  line-height: 1.8;
+  margin-bottom: 20px;
+  font-size: 17px;
+  max-width: 600px;
+}
+
+.project-buttons{
+  display: flex;
+  gap: 20px;
+  margin-top: 35px;
+  flex-wrap: wrap;
+}
+
+.project-video-btn{
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.project-image{
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-width: 320px;
+  position: relative;
+}
+
+.project-image::before{
+  content: "";
+  position: absolute;
+  width: 380px;
+  height: 380px;
+  background: radial-gradient(
+    rgba(130,93,198,0.45),
+    transparent 70%
+  );
+  border-radius: 50%;
+  z-index: 0;
+  filter: blur(20px);
+}
+
+.project-image img{
+  width: 100%;
+  max-width: 420px;
+  position: relative;
+  z-index: 2;
+  animation: floating 4s ease-in-out infinite;
+  filter: drop-shadow(0 0 35px rgba(130,93,198,0.45));
+}
+
+/* animação */
+
+@keyframes floating{
+  0%{
+    transform: translateY(0px);
+  }
+
+  50%{
+    transform: translateY(-18px);
+  }
+
+  100%{
+    transform: translateY(0px);
+  }
+}
+
+/* RESPONSIVO */
+
+@media(max-width: 992px){
+
+  .project-container{
+    flex-direction: column-reverse;
+    text-align: center;
+  }
+
+  .project-text p{
+    margin-inline: auto;
+  }
+
+  .project-buttons{
+    justify-content: center;
+  }
+
+  .project-text h2{
+    font-size: 42px;
+  }
+
+}
+
+@media(max-width: 600px){
+
+  .project{
+    padding: 90px 6%;
+  }
+
+  .project-text h2{
+    font-size: 34px;
+  }
+
+  .project-image img{
+    max-width: 300px;
+  }
+
+}
