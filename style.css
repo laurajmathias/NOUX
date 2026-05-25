@@ -17,6 +17,16 @@ body{
   overflow-x: hidden;
 }
 
+:root{
+
+  --dark-blue: #1E2532;
+  --purple-dark: #210C48;
+  --gray: #7E8396;
+  --purple: #825DC6;
+  --purple-light: #D5B8F8;
+
+}
+
 /* CONTAINER */
 
 .container{
