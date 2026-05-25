@@ -514,19 +514,23 @@ section{
 }
 
 /* MOCKUP */
-
 .project-image{
-  flex: 1;
 
   display: flex;
   justify-content: center;
+
 }
 
 .project-image img{
-  width: 100%;
-  max-width: 500px;
 
-  animation: floating 4s ease-in-out infinite;
+  width: 1000%;
+  max-width: 2000px;
+
+  filter:
+  drop-shadow(
+    0 0 35px rgba(130,93,198,0.35)
+  );
+
 }
 
 /* CONTATO */
