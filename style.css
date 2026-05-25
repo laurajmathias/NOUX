@@ -989,8 +989,8 @@ textarea{
 .project-image::before{
   content: "";
   position: absolute;
-  width: 380px;
-  height: 380px;
+  width: 500px;
+  height: 500px;
   background: radial-gradient(
     rgba(130,93,198,0.45),
     transparent 70%
@@ -1002,7 +1002,7 @@ textarea{
 
 .project-image img{
   width: 100%;
-  max-width: 420px;
+  max-width: 700px;
   position: relative;
   z-index: 2;
   animation: floating 4s ease-in-out infinite;
