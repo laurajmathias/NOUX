@@ -613,16 +613,12 @@ section{
   flex-wrap: wrap;
 }
 
-.footer-links{
-  display: flex;
+..footer-links a{
+  color: rgba(255,255,255,.72);
 
-  align-items: center;
+  text-decoration: none;
 
-  justify-content: center;
-
-  gap: 28px;
-
-  flex-wrap: wrap;
+  transition: .3s;
 }
 
 .footer-links a{
