@@ -657,10 +657,16 @@ section{
 }
 
 .footer-social a:hover{
-  background: white;
-  color: #093b4b;
-}
+  background: linear-gradient(
+    135deg,
+    #7b2cff,
+    #c94cff
+  );
 
+  color: white;
+
+  transform: translateY(-5px);
+}
 .copyright{
   text-align: center;
 
