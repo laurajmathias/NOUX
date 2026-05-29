@@ -590,6 +590,12 @@ section{
   border-top: 1px solid rgba(255,255,255,.08);
 }
 
+.footer-logo img{
+  width: 220px;
+  height: auto;
+  object-fit: contain;
+}
+
 .footer-container{
   display: flex;
 
