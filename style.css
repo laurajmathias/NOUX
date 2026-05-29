@@ -581,13 +581,18 @@ section{
 /* FOOTER */
 
 .footer{
-  padding: 35px;
+  padding: 60px 35px 35px;
 
-  background: #093b4b;
+  background: linear-gradient(
+    135deg,
+    #060816,
+    #0c1023,
+    #131933
+  );
 
   color: white;
 
-  border-top: 1px solid rgba(255,255,255,.08);
+  border-top: 1px solid rgba(255,255,255,.05);
 }
 
 .footer-logo img{
