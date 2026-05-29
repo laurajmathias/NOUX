@@ -628,11 +628,9 @@ section{
 
   transition: .3s;
 }
-
 .footer-links a:hover{
-  color: white;
+  color: #c94cff;
 }
-
 .footer-social{
   display: flex;
   gap: 18px;
@@ -646,7 +644,7 @@ section{
 
   background: rgba(255,255,255,.08);
 
-  color: white;
+  color: rgb(5, 21, 161);
 
   display: flex;
 
